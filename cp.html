@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Auction</title>
+    <link rel="stylesheet" href="cp.css">
+</head>
+<body>
+    <header>
+        <h1>Online Auction</h1>
+    </header>
+    <div class="container">
+        <div id="auction-items">
+            <!-- Auction items will be dynamically added here -->
+        </div>
+        <div id="bid-form">
+            <h2>Place a Bid</h2>
+            <input type="text" id="bid-amount" placeholder="Enter bid amount">
+            <button onclick="placeBid()">Place Bid</button>
+            <p id="message"></p>
+        </div>
+    </div>
+    <script src="cp.js"></script>
+</body>
+</html>

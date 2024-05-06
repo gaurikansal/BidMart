@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" context="IE=edge">
+		<meta name="viewport" content="width=device-width,
+		 initial-scale=1.0">
+		<title>
+			Online Auction Bid Website
+		</title>
+		<link rel="stylesheet" href="npro.css">
+		<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+	</head>
+    
+    <body>
+        <header>
+			<div class="nav container">
+				<i class='bx bx-menu' id="menu-icon"></i>
+				<a href="#" class="logo">Bid<span>Mania</span></a>			<u1 class="navbar">
+		<li><a href="#home"><a href="index.html">Home</a></a></li>
+	<li><a href="#parts" class="active"><a href="parts.html">Shop</a></a></li>
+	<li><a href="#about"><a href="index.html">About</a></a></li>
+	<li><a href="#news"><a href="index.html">News</a></a></li>
+				</u1>
+				<i class='bx bx-search-alt' id="search-icon"></i>
+				<div class="search-box container">
+					<input type="search" name="" id="" placeholder="Search here...">
+				</div>
+			</div>
+		</header>
+        <div class="hero">
+            <div class="row">
+                <div class="col">
+                    <div class="slider">
+                        <div class="product">
+                            <img src="img/b1.jpg" alt=""
+                            onclick="clickme(this)">
+                            <img src="img/bb1.jpg" alt=""
+                            onclick="clickme(this)">
+                            <img src="img/bb2.jpg" alt=""
+                            onclick="clickme(this)">
+                            <img src="img/bb3.jpg" alt=""
+                            onclick="clickme(this)">
+                        </div>
+                        <div class="preview">
+                            <img src="img/b1.jpg" id="imagebox" alt=""
+                    >
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="content">
+                        <p class="brand">brand oppo</p>
+                        <h2>500</h2>
+                        <div class="rating"></div>
+                        <i class='bx bxs-star'></i>
+					<i class='bx bxs-star'></i>
+					<i class='bx bxs-star'></i>
+					<i class='bx bxs-star'></i>
+					<i class='bx bxs-star-half' ></i>
+                    </div>
+                    <button type="button">
+                        Place Bid
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="bid-form">
+            <h2>Place a Bid</h2>
+            <input type="text" id="bid-amount" placeholder="Enter bid amount">
+            <button onclick="placeBid()">Place Bid</button>
+            <p id="message"></p>
+        </div>
+        <section class="footer">
+			<div class="footer-container container">
+				<div class="footer-box">
+					<a href="#" class="logo">Bid<span>Mania</span></a>
+					<div class="social">
+						<a href="#"><i class='bx bxl-facebook'></i></a>
+						<a href="#"><i class='bx bxl-twitter'></i></a>
+						<a href="#"><i class='bx bxl-instagram' ></i></a>
+						<a href="#"><i class='bx bxl-youtube' ></i></a>
+						
+					</div>
+				</div>
+				<div class="footer-box">
+					<h3>Page</h3>
+					<a href="#">Home</a>
+					<a href="#">Bid</a>
+					<a href="#">Shop</a>
+					<a href="#" >sales</a>
+				</div>
+				<div class="footer-box">
+					<h3>Legal</h3>
+					<a href="#">privacy</a>
+					<a href="#">refund policy</a>
+					<a href="#">cookie policy</a>
+					
+					</div>
+					<div class="footer-box">
+					<h3>Contact</h3>
+					<p>india</p>
+					<p>china</p>
+					<p>japan</p>
+				</div>
+			</div>
+		</section>
+		<div class="copyright">
+			<p>&#169; Auction All Right Reserved</p>
+		</div>
+	
+        <script>
+            function clickme(smallImg){
+                var fullImg = document.getElementById("imagebox");
+                fullImg.src = smallImg.src
+            }
+            
+
+        </script>
+    </body>
